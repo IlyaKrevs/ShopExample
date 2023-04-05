@@ -11,7 +11,7 @@ const HeaderBot = (props) => {
         <div className={classes.header__bot}>
             <img src="./img/sultan.svg" alt="sultan" />
 
-            <Link to='/'> <MyButton children='Каталог' src="./img/ButtonImg1.svg" />
+            <Link to='/catalog'> <MyButton children='Каталог' src="./img/ButtonImg1.svg" />
             </Link>
             <MyInput />
 

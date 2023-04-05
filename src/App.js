@@ -65,7 +65,7 @@ function App() {
 
 
       <Routes>
-        <Route exact path="/" element={<CatalogPage setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
+        <Route exact path="/catalog" element={<CatalogPage setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
         <Route exact path="/catalog/:barcode" element={<ProductPage setCrumbsText={setCrumbsText} />} />
         <Route path="/basket" element={<BacketPage setBill={setBill} setHeaderCounter={setHeaderCounter} bill={bill} setBillCallBack={setBillCallBack} deleteFromBasket={deleteFromBasket} setHeaderCounterCallBack={setHeaderCounterCallBack} bascketItems={bascketItems} />} />
         <Route path="/admin" element={<AdminPanel />} />
