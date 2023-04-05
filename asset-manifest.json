@@ -1,13 +1,31 @@
 {
   "files": {
     "main.css": "/ShopExample/static/css/main.12af89cd.css",
-    "main.js": "/ShopExample/static/js/main.107e1428.js",
+    "main.js": "/ShopExample/static/js/main.8bd278e5.js",
+    "static/media/telka.svg": "/ShopExample/static/media/telka.4800861a89434df988a6bc6190a4c4c8.svg",
+    "static/media/sultan.svg": "/ShopExample/static/media/sultan.f8cd454a92661644af7bdc46555de0a6.svg",
+    "static/media/sultanWhite.svg": "/ShopExample/static/media/sultanWhite.01a6f52c21ce2c03e13edd33aeaa1c4a.svg",
+    "static/media/master.svg": "/ShopExample/static/media/master.d14a9b95278ab09b397776a208620f22.svg",
+    "static/media/wApp.svg": "/ShopExample/static/media/wApp.db4fdea63d5ac10f8039908e900cc30f.svg",
+    "static/media/backetBtnImg.svg": "/ShopExample/static/media/backetBtnImg.a01cc6d208c6df982a93cbd6d28e73e7.svg",
+    "static/media/backetImg.svg": "/ShopExample/static/media/backetImg.7e3f10a67cbf7efab90673a8b0ccf897.svg",
+    "static/media/delete.svg": "/ShopExample/static/media/delete.44202266d5f12854837e97d26b8ce355.svg",
+    "static/media/visa.svg": "/ShopExample/static/media/visa.17df96a7e3caeb00a6b1f33bb73ba565.svg",
+    "static/media/shareImg.svg": "/ShopExample/static/media/shareImg.5201f4defbefb503f0cd54ced3977e87.svg",
+    "static/media/geoTag.svg": "/ShopExample/static/media/geoTag.04d92866ad0c655acca87d8171ed8896.svg",
+    "static/media/mail.svg": "/ShopExample/static/media/mail.3e3846c4f8765fe5313a394940923dde.svg",
+    "static/media/volumeItem.svg": "/ShopExample/static/media/volumeItem.3daf02ca5bcf43434fd3c21fedf830c9.svg",
+    "static/media/tg.svg": "/ShopExample/static/media/tg.3a70f4c5f39390e3a20699ef067983e5.svg",
+    "static/media/ButtonImg1.svg": "/ShopExample/static/media/ButtonImg1.4756189f8fb2f4cdf0b38c581c7033d8.svg",
+    "static/media/Findimg.svg": "/ShopExample/static/media/Findimg.ea9ef697bfe0d73dc61f4d8bcff567cc.svg",
     "index.html": "/ShopExample/index.html",
+    "static/media/imgBlack.svg": "/ShopExample/static/media/imgBlack.46131d447508d37599c11a90155e810a.svg",
+    "static/media/priceListBtn.svg": "/ShopExample/static/media/priceListBtn.5e96ff0389bda2c469106116f0a58afd.svg",
     "main.12af89cd.css.map": "/ShopExample/static/css/main.12af89cd.css.map",
-    "main.107e1428.js.map": "/ShopExample/static/js/main.107e1428.js.map"
+    "main.8bd278e5.js.map": "/ShopExample/static/js/main.8bd278e5.js.map"
   },
   "entrypoints": [
     "static/css/main.12af89cd.css",
-    "static/js/main.107e1428.js"
+    "static/js/main.8bd278e5.js"
   ]
 }
