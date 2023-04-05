@@ -18,7 +18,7 @@ const CatalogItem = (props) => {
 
         <div className={classes.catalogBot__item}>
             <div className={classes.catalogBot__item_img}>
-                <img src={process.env.PUBLIC_URL + props.catalogItem.url} />
+                <img src={props.catalogItem.url} />
             </div>
             <p className={classes.catalogBot__item__volume}> <img src="./img/volumeItem.svg" />{props.catalogItem.size} </p>
 
