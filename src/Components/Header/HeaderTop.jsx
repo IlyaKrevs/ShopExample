@@ -1,13 +1,16 @@
 import React from 'react';
 import classes from './HeaderTop.module.css';
 
+import geoPic from '../../img/geoTag.svg'
+import mailPic from '../../img/mail.svg'
+
 const HeaderTop = () => {
     return (
         <div className={classes.header__top}>
 
             <div className={classes.top__left}>
                 <div className={classes.header__item}>
-                    <img src="./img/geoTag.svg" alt="geoTag" />
+                    <img src={geoPic} alt="geoTag" />
                     <p> <span>г. Кокчетав, ул. Ж. Ташенова 129Б</span> <br />
                         (Рынок Восточный)</p>
                 </div>
@@ -15,7 +18,7 @@ const HeaderTop = () => {
                 <div className={classes.splitter}></div>
 
                 <div className={classes.header__item}>
-                    <img src="./img/mail.svg" alt="mail" />
+                    <img src={mailPic} alt="mail" />
                     <p className={classes.pSimpleClass}> <span className={classes.spanSimpleClass}>opt.sultan@mail.ru </span> <br />
                         На связи в любое время</p>
                 </div>

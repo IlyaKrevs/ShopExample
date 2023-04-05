@@ -5,6 +5,8 @@ import MyCheckBox from '../../UI/MyCheckBox/MyCheckBox';
 import MyInput from '../../UI/MyInput/MyInput';
 import classes from './FindFilter.module.css';
 
+import deletePic from '../../../img/delete.svg';
+
 const FindFilter = (props) => {
 
     let myData = JSON.parse(myDataJSON);
@@ -92,7 +94,7 @@ const FindFilter = (props) => {
                     style={{
                         padding: '20px',
                     }}
-                    src="./img/delete.svg" />
+                    src={deletePic} />
             </div>
         </div>
     );

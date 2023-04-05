@@ -3,6 +3,8 @@ import MyButton from '../UI/MyButton/MyButton';
 import classes from './BascketItem.module.css';
 import BascketSplitter from './BascketSplitter';
 
+import deletePic from './../../img/delete.svg';
+
 const BascketItem = (props) => {
 
     let [localCount, setLocalCount] = useState(1);
@@ -69,7 +71,7 @@ const BascketItem = (props) => {
                 <MyButton onClick={e => deleteFunc()} style={{
                     width: 60,
                     height: 60,
-                }} src='../../../img/delete.svg' />
+                }} src={deletePic} />
             </div>
             <BascketSplitter />
         </div >

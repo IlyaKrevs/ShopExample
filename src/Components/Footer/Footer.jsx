@@ -4,6 +4,14 @@ import MyInput from '../UI/MyInput/MyInput';
 
 import classes from "./Footer.module.css";
 
+import sultanPic from '../../img/sultanWhite.svg';
+
+import priceListPic from '../../img/priceListBtn.svg';
+import visaPic from '../../img/visa.svg';
+import masterPic from '../../img/master.svg';
+import wAppPic from '../../img/wApp.svg';
+import tgPic from '../../img/tg.svg';
+
 const Footer = () => {
     return (
         <footer className={classes.footer__container}>
@@ -12,7 +20,7 @@ const Footer = () => {
                 <div className={classes.item__img}>
 
                     <div className={classes.item__miniContainer}>
-                        <img className={classes.whiteSultan} src="./img/sultanWhite.svg" />
+                        <img className={classes.whiteSultan} src={sultanPic} />
                         <p className={classes.item__img_title}>
                             Компания «Султан» — снабжаем розничные магазины товарами
                             "под ключ" в Кокчетаве и Акмолинской области
@@ -83,15 +91,15 @@ const Footer = () => {
                         Скачать прайс-лист:
                     </p>
 
-                    <MyButton children="Прайс - лист" src="./img/priceListBtn.svg" />
+                    <MyButton children="Прайс - лист" src={priceListPic} />
 
                     <p className={classes.navigation__descr}>
                         Связь в мессенджерах:
                     </p>
 
                     <div className={classes.little_img_container}>
-                        <img src="./img/wApp.svg" />
-                        <img src="./img/tg.svg" />
+                        <img src={wAppPic} />
+                        <img src={tgPic} />
                     </div>
                 </div>
 
@@ -111,8 +119,8 @@ const Footer = () => {
                         На связи в любое время</p>
 
                     <div className={classes.imgCards__container}>
-                        <img className={classes.imgCards} src="./img/visa.svg" />
-                        <img className={classes.imgCards} src="./img/master.svg" />
+                        <img className={classes.imgCards} src={visaPic} />
+                        <img className={classes.imgCards} src={masterPic} />
                     </div>
                 </div>
 

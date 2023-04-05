@@ -4,6 +4,10 @@ import classes from './ProductPage.module.css';
 import { useParams } from 'react-router-dom';
 import myDataJSON from '../JSONdata';
 
+import basketBtnPic from './../img/backetBtnImg.svg';
+import sharePic from './../img/shareImg.svg';
+import blackPic from './../img/imgBlack.svg';
+
 
 const ProductPage = (props) => {
     let params = useParams();
@@ -49,19 +53,19 @@ const ProductPage = (props) => {
                         <div className={classes.count}>{productCount}</div>
                         <div onClick={e => productCountUp()} className={classes.symbol}>+</div>
                     </div>
-                    <MyButton children='В корзину' src='../../../img/backetBtnImg.svg' />
+                    <MyButton children='В корзину' src={basketBtnPic} />
                 </div>
 
 
                 <div className={classes.container}>
                     <div className={classes.share}>
-                        <img src="../../img/shareImg.svg" />
+                        <img src={sharePic} />
                     </div>
                     <p className={classes.sale}>При покупке от <span className={classes.saleBold}>10 000 ₸</span> бесплатная доставка по Кокчетаву и области
                     </p>
 
                     <div className={classes.priceList}>
-                        Прайс-лист <img src='../../img/imgBlack.svg' />
+                        Прайс-лист <img src={blackPic} />
                     </div>
                 </div>
 

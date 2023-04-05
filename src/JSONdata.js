@@ -1,5 +1,23 @@
+import pic1 from './img/products/photo1.jpg'
+import pic2 from './img/products/photo2.jpg'
+import pic3 from './img/products/photo3.jpg'
+import pic4 from './img/products/photo4.jpg'
+import pic5 from './img/products/photo5.jpg'
+import pic6 from './img/products/photo6.jpg'
+import pic7 from './img/products/photo7.jpg'
+import pic8 from './img/products/photo8.jpg'
+import pic9 from './img/products/photo9.jpg'
+import pic10 from './img/products/photo10.jpg'
+import pic11 from './img/products/photo11.jpg'
+import pic12 from './img/products/photo12.jpg'
+import pic13 from './img/products/photo13.jpg'
+import pic14 from './img/products/photo14.jpg'
+import pic15 from './img/products/photo15.jpg'
+import pic16 from './img/products/photo16.jpg'
+import pic17 from './img/products/photo17.jpg'
+
 let myItem1 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo1.jpg",
+    url: pic1,
     name: "1a",
     sizeType: {
         weight: "1",
@@ -15,7 +33,7 @@ let myItem1 = {
 }
 
 let myItem2 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo2.jpg",
+    url: pic2,
     name: "2a",
     sizeType: {
         weight: "12",
@@ -32,7 +50,7 @@ let myItem2 = {
 }
 
 let myItem3 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo3.jpg",
+    url: pic3,
     name: "3a",
     sizeType: {
         weight: "123",
@@ -48,7 +66,7 @@ let myItem3 = {
 }
 
 let myItem4 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo4.jpg",
+    url: pic4,
     name: "4a",
     sizeType: {
         weight: "1234",
@@ -65,7 +83,7 @@ let myItem4 = {
 }
 
 let myItem5 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo5.jpg",
+    url: pic5,
     name: "a5",
     sizeType: {
         weight: "5",
@@ -82,7 +100,7 @@ let myItem5 = {
 }
 
 let myItem6 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo6.jpg",
+    url: pic6,
     name: "a6",
     sizeType: {
         weight: "56",
@@ -99,7 +117,7 @@ let myItem6 = {
 }
 
 let myItem7 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo7.jpg",
+    url: pic7,
     name: "a7",
     sizeType: {
         weight: "567",
@@ -116,7 +134,7 @@ let myItem7 = {
 }
 
 let myItem8 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo8.jpg",
+    url: pic8,
     name: "a8",
     sizeType: {
         weight: "5678",
@@ -133,7 +151,7 @@ let myItem8 = {
 }
 
 let myItem9 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo9.jpg",
+    url: pic9,
     name: "9b",
     sizeType: {
         weight: "9",
@@ -150,7 +168,7 @@ let myItem9 = {
 }
 
 let myItem10 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo10.jpg",
+    url: pic10,
     name: "10b",
     sizeType: {
         weight: "90",
@@ -167,7 +185,7 @@ let myItem10 = {
 }
 
 let myItem11 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo11.jpg",
+    url: pic11,
     name: "11b",
     sizeType: {
         weight: "901",
@@ -184,7 +202,7 @@ let myItem11 = {
 }
 
 let myItem12 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo12.jpg",
+    url: pic12,
     name: "12b",
     sizeType: {
         weight: "9012",
@@ -201,7 +219,7 @@ let myItem12 = {
 }
 
 let myItem13 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo13.jpg",
+    url: pic13,
     name: "c13",
     sizeType: {
         weight: "3",
@@ -218,7 +236,7 @@ let myItem13 = {
 }
 
 let myItem14 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo14.jpg",
+    url: pic14,
     name: "c14",
     sizeType: {
         weight: "34",
@@ -235,7 +253,7 @@ let myItem14 = {
 }
 
 let myItem15 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo15.jpg",
+    url: pic15,
     name: "c15",
     sizeType: {
         weight: "345",
@@ -252,7 +270,7 @@ let myItem15 = {
 }
 
 let myItem16 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo16.jpg",
+    url: pic16,
     name: "c16",
     sizeType: {
         weight: "3456",
@@ -269,7 +287,7 @@ let myItem16 = {
 }
 
 let myItem17 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo17.jpg",
+    url: pic17,
     name: "qwerty123",
     sizeType: {
         weight: "999",
@@ -303,6 +321,8 @@ if (localStorageArr.length) {
 } else {
     myDataJSON = JSON.stringify(myDataArray);
 }
+
+let homePage = 'https://ilyakrevs.github.io/ShopExample/';
 
 
 

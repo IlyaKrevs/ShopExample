@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import MyButton from '../../UI/MyButton/MyButton';
 import classes from './CatalogItem.module.css';
 
+import btnPic from '../../../img/backetBtnImg.svg';
+
+import volumePic from '../../../img/volumeItem.svg'
+
 
 const CatalogItem = (props) => {
 
@@ -20,7 +24,7 @@ const CatalogItem = (props) => {
             <div className={classes.catalogBot__item_img}>
                 <img src={props.catalogItem.url} />
             </div>
-            <p className={classes.catalogBot__item__volume}> <img src="./img/volumeItem.svg" />{props.catalogItem.size} </p>
+            <p className={classes.catalogBot__item__volume}> <img src={volumePic} />{props.catalogItem.size} </p>
 
             <div className={classes.catalogBot__item__title}>
                 <Link to={props.catalogItem.barcode}>
@@ -49,7 +53,7 @@ const CatalogItem = (props) => {
                     fontSize: '10px',
                     lineHeight: '12px',
                     letterSpacing: '0.15em',
-                }} children='В КОРЗИНУ' src='../../img/backetBtnImg.svg' onClick={(e) => btnDeactivate()} disabled={btnState === 1 && true} />
+                }} children='В КОРЗИНУ' src={btnPic} onClick={(e) => btnDeactivate()} disabled={btnState === 1 && true} />
             </div>
         </div>
     );
