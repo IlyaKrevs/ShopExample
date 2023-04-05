@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MyButton from '../../UI/MyButton/MyButton';
 import classes from './CatalogItem.module.css';
-import homePage from '../../../homePageLink.js'
 
 
 const CatalogItem = (props) => {
@@ -19,7 +18,7 @@ const CatalogItem = (props) => {
 
         <div className={classes.catalogBot__item}>
             <div className={classes.catalogBot__item_img}>
-                <img src={homePage + props.catalogItem.url} />
+                <img src={props.catalogItem.url} />
             </div>
             <p className={classes.catalogBot__item__volume}> <img src="./img/volumeItem.svg" />{props.catalogItem.size} </p>
 
