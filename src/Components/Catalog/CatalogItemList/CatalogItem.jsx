@@ -18,7 +18,7 @@ const CatalogItem = (props) => {
 
         <div className={classes.catalogBot__item}>
             <div className={classes.catalogBot__item_img}>
-                <img src={props.catalogItem.url} />
+                <img src={process.env.PUBLIC_URL + props.catalogItem.url} />
             </div>
             <p className={classes.catalogBot__item__volume}> <img src="./img/volumeItem.svg" />{props.catalogItem.size} </p>
 
@@ -49,7 +49,7 @@ const CatalogItem = (props) => {
                     fontSize: '10px',
                     lineHeight: '12px',
                     letterSpacing: '0.15em',
-                }} children='В КОРЗИНУ' src={process.env.PUBLIC_URL + './img/backetBtnImg.svg'} onClick={(e) => btnDeactivate()} disabled={btnState === 1 && true} />
+                }} children='В КОРЗИНУ' src='../../img/backetBtnImg.svg' onClick={(e) => btnDeactivate()} disabled={btnState === 1 && true} />
             </div>
         </div>
     );
