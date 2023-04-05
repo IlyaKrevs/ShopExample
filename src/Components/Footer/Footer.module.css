@@ -1,0 +1,133 @@
+.footer__container {
+    background: #3F4E65;
+    padding-left: calc(50% - 685px);
+    padding-right: calc(50% - 685px);
+    padding-top: 70px;
+}
+
+.item__container {
+    display: flex;
+    gap: 95px;
+}
+
+.item__img {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding-bottom: 116px;
+}
+
+.item__img_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.item__img_descr {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #FFFFFF;
+}
+
+.item__miniContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.whiteSultan {
+    width: 156px;
+    height: 66px;
+}
+
+
+.item__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navigation__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    padding-bottom: 5px;
+
+    color: #FFFFFF;
+}
+
+.navigation__descr {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+}
+
+.little_img_container {
+    display: flex;
+    gap: 10px;
+}
+
+
+.CallBackText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.CallBackBOLD {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.CallBackThin {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.CallBackUnderline {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.footer__ystal {
+    color: white;
+}
+
+
+.imgCards__container {
+    display: flex;
+    gap: 5px;
+}
+
+.imgCards {
+    width: 61px;
+    height: 39px;
+}

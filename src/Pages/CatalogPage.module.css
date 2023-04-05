@@ -1,0 +1,22 @@
+.mainCatalog {
+    padding-left: calc(50% - 685px);
+    padding-right: calc(50% - 685px);
+}
+
+.catalogBot {
+    display: grid;
+    grid-template: 1fr 100px / 350px 1fr;
+}
+
+.catalogBot__filtersContainer {
+    width: 238px;
+}
+
+
+.catalogBot__itemsList {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+

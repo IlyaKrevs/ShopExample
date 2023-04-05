@@ -1,0 +1,50 @@
+.adminPanel {
+    padding-top: 80px;
+    display: flex;
+    height: 900px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+.addItemsForJSON {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    background-color: gray;
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.adminInput {
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+.adminBtn {
+    margin: 0 auto;
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.checkBoxContainer {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    gap: 5px;
+}
+
+.labelBox {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}

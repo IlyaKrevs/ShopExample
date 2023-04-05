@@ -1,0 +1,19 @@
+.myButton {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+
+    background: #FFC85E;
+    border-radius: 79px;
+
+
+    padding: 20px 50px;
+    color: #FFFFFF;
+}

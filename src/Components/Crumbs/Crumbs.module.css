@@ -1,0 +1,41 @@
+.crumbs {
+    display: flex;
+    gap: 10px;
+
+    padding-left: calc(50% - 685px);
+    padding-right: calc(50% - 685px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.crumbs__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #3F4E65;
+}
+
+.splitter {
+    height: 16px;
+    opacity: 0.3;
+    display: inline-block;
+
+    border: 1px dashed #3F4E65;
+
+}
+
+.crumbs__descr {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 120%;
+
+
+    color: #3F4E65;
+
+    opacity: 0.5;
+}

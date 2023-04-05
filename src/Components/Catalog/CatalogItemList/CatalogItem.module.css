@@ -1,0 +1,83 @@
+.catalogBot__item {
+
+    padding: 30px 25px;
+
+    width: 326px;
+    height: 490px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 14px 39px -11px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.catalogBot__item_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 236px;
+}
+
+.catalogBot__item__volume {
+    display: flex;
+    gap: 5px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #3F4E65;
+}
+
+.catalogBot__item__title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #111111;
+}
+
+.catalogBot__item__titleBig {
+    font-weight: 700;
+}
+
+.item__description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #111111;
+    display: flex;
+    gap: 5px;
+}
+
+.descrtiption_about {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #3F4E65;
+}
+
+.item__price {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price__value {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 130%;
+    color: #111111;
+}

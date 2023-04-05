@@ -1,0 +1,109 @@
+.backetItem__Descr {
+    width: 480px;
+}
+
+.container {
+    padding: 50px 0;
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.backetItem__Descr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.volumeImg {
+    height: 15px;
+    width: 9px;
+}
+
+.volumeText {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #3F4E65;
+
+}
+
+.volumeContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.backetTextBOLD {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #111111;
+}
+
+.backetThintext {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #3F4E65;
+}
+
+.splitter {
+    height: 50px;
+    width: 1px;
+    opacity: 0.2;
+    border: 1px dashed #3F4E65;
+}
+
+.symbol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 14px;
+    gap: 10px;
+
+    width: 34px;
+    height: 23px;
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+
+    cursor: pointer;
+}
+
+.count {
+    width: 7px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    color: #3F4E65;
+
+}
+
+.countContainer {
+    width: 113px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bigPrice {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: #111111;
+}

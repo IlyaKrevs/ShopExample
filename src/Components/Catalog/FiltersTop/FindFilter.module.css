@@ -1,0 +1,21 @@
+.catalogBot_findFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.findFilter__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #111111;
+
+}
+
+.button__container {
+    display: flex;
+    gap: 10px;
+}

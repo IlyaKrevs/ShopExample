@@ -1,0 +1,220 @@
+.productCard {
+    padding-top: 65px;
+    padding-left: calc(50% - 685px);
+    padding-right: calc(50% - 685px);
+    display: flex;
+    gap: 40px;
+}
+
+.productImg {
+    width: 664px;
+    height: 700px;
+}
+
+.productCardDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+
+}
+
+.haveIt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+
+    color: #1FD85D;
+}
+
+.productCard__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+
+
+    color: #111111;
+}
+
+.special {
+    font-weight: 800;
+}
+
+.weight {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #3F4E65;
+    display: flex;
+    gap: 5px;
+}
+
+.symbol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 14px;
+    gap: 10px;
+
+    width: 34px;
+    height: 23px;
+
+
+    background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+    border-radius: 1000px;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+
+
+    cursor: pointer;
+
+    color: #3F4E65;
+}
+
+.countContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.count {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+
+    color: #3F4E65;
+
+}
+
+.price {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+
+    color: #111111;
+}
+
+.priceContainer {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+
+}
+
+.share {
+    width: 77px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    background: #FFFFFF;
+
+
+    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.sale {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+
+    text-align: center;
+
+    color: #3F4E65;
+    width: 326px;
+    height: 77px;
+    padding: 20px;
+}
+
+.saleBold {
+    font-weight: 700;
+
+
+}
+
+.priceList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    background: white;
+
+    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+    border-radius: 10px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3F4E65;
+
+}
+
+.about {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.aboutTitle {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #3F4E65;
+}
+
+.aboutDescr {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #111111;
+}
+
+.aboutContainer {
+    display: flex;
+    gap: 10px;
+}

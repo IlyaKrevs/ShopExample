@@ -1,0 +1,10 @@
+.FindButton {
+    width: 40px;
+    height: 40px;
+    background: #FFC85E;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

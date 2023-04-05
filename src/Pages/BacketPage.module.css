@@ -1,0 +1,54 @@
+.backetPage {
+    padding-left: calc(50% - 685px);
+    padding-right: calc(50% - 685px);
+}
+
+.backetTitle {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+
+
+    text-transform: uppercase;
+
+    color: #111111;
+    padding-bottom: 50px;
+
+}
+
+.botContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
+
+.bigPrice {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+
+    color: #111111;
+
+}
+
+.empty {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 120%;
+
+
+    text-transform: uppercase;
+}

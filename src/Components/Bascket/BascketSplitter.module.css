@@ -1,0 +1,7 @@
+.splitter {
+    width: 100%;
+    height: 1px;
+    opacity: 0.3;
+
+    border: 1px dashed #3F4E65;
+}

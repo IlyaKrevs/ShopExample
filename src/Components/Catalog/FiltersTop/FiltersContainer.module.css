@@ -1,0 +1,5 @@
+.mainCatalog__filtersContainer {
+    display: flex;
+    gap: 11px;
+    padding-bottom: 30px;
+}
