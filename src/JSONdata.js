@@ -1,5 +1,5 @@
 let myItem1 = {
-    url: "../../img/products/photo1.jpg",
+    url: "./img/products/photo1.jpg",
     name: "1a",
     sizeType: {
         weight: "1",
@@ -15,7 +15,7 @@ let myItem1 = {
 }
 
 let myItem2 = {
-    url: "../../img/products/photo2.jpg",
+    url: "./img/products/photo2.jpg",
     name: "2a",
     sizeType: {
         weight: "12",
@@ -32,7 +32,7 @@ let myItem2 = {
 }
 
 let myItem3 = {
-    url: "../../img/products/photo3.jpg",
+    url: "./img/products/photo3.jpg",
     name: "3a",
     sizeType: {
         weight: "123",
@@ -48,7 +48,7 @@ let myItem3 = {
 }
 
 let myItem4 = {
-    url: "../../img/products/photo4.jpg",
+    url: "./img/products/photo4.jpg",
     name: "4a",
     sizeType: {
         weight: "1234",
@@ -65,7 +65,7 @@ let myItem4 = {
 }
 
 let myItem5 = {
-    url: "../../img/products/photo5.jpg",
+    url: "./img/products/photo5.jpg",
     name: "a5",
     sizeType: {
         weight: "5",
@@ -82,7 +82,7 @@ let myItem5 = {
 }
 
 let myItem6 = {
-    url: "../../img/products/photo6.jpg",
+    url: "./img/products/photo6.jpg",
     name: "a6",
     sizeType: {
         weight: "56",
@@ -99,7 +99,7 @@ let myItem6 = {
 }
 
 let myItem7 = {
-    url: "../../img/products/photo7.jpg",
+    url: "./img/products/photo7.jpg",
     name: "a7",
     sizeType: {
         weight: "567",
@@ -116,7 +116,7 @@ let myItem7 = {
 }
 
 let myItem8 = {
-    url: "../../img/products/photo8.jpg",
+    url: "./img/products/photo8.jpg",
     name: "a8",
     sizeType: {
         weight: "5678",
@@ -133,7 +133,7 @@ let myItem8 = {
 }
 
 let myItem9 = {
-    url: "../../img/products/photo9.jpg",
+    url: "./img/products/photo9.jpg",
     name: "9b",
     sizeType: {
         weight: "9",
@@ -150,7 +150,7 @@ let myItem9 = {
 }
 
 let myItem10 = {
-    url: "../../img/products/photo10.jpg",
+    url: "./img/products/photo10.jpg",
     name: "10b",
     sizeType: {
         weight: "90",
@@ -167,7 +167,7 @@ let myItem10 = {
 }
 
 let myItem11 = {
-    url: "../../img/products/photo11.jpg",
+    url: "./img/products/photo11.jpg",
     name: "11b",
     sizeType: {
         weight: "901",
@@ -184,7 +184,7 @@ let myItem11 = {
 }
 
 let myItem12 = {
-    url: "../../img/products/photo12.jpg",
+    url: "./img/products/photo12.jpg",
     name: "12b",
     sizeType: {
         weight: "9012",
@@ -201,7 +201,7 @@ let myItem12 = {
 }
 
 let myItem13 = {
-    url: "../../img/products/photo13.jpg",
+    url: "./img/products/photo13.jpg",
     name: "c13",
     sizeType: {
         weight: "3",
@@ -218,7 +218,7 @@ let myItem13 = {
 }
 
 let myItem14 = {
-    url: "../../img/products/photo14.jpg",
+    url: "./img/products/photo14.jpg",
     name: "c14",
     sizeType: {
         weight: "34",
@@ -235,7 +235,7 @@ let myItem14 = {
 }
 
 let myItem15 = {
-    url: "../../img/products/photo15.jpg",
+    url: "./img/products/photo15.jpg",
     name: "c15",
     sizeType: {
         weight: "345",
@@ -252,7 +252,7 @@ let myItem15 = {
 }
 
 let myItem16 = {
-    url: "../../img/products/photo16.jpg",
+    url: "./img/products/photo16.jpg",
     name: "c16",
     sizeType: {
         weight: "3456",
@@ -269,7 +269,7 @@ let myItem16 = {
 }
 
 let myItem17 = {
-    url: "../../img/products/photo17.jpg",
+    url: "./img/products/photo17.jpg",
     name: "qwerty123",
     sizeType: {
         weight: "999",
