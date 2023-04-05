@@ -57,23 +57,25 @@ function App() {
 
   return (
 
-    <BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
 
-      <Header bill={bill} headerCounter={headerCounter} />
-      <Crumbs crumbsText={crumbsText} />
-
-
-
-      <Routes>
-        <Route exact path="/" element={<CatalogPage setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
-        <Route exact path="/catalog/:barcode" element={<ProductPage setCrumbsText={setCrumbsText} />} />
-        <Route path="/basket" element={<BacketPage setBill={setBill} setHeaderCounter={setHeaderCounter} bill={bill} setBillCallBack={setBillCallBack} deleteFromBasket={deleteFromBasket} setHeaderCounterCallBack={setHeaderCounterCallBack} bascketItems={bascketItems} />} />
-        <Route path="/admin" element={<AdminPanel />} />
-      </Routes>
-      <Footer />
+        <Header bill={bill} headerCounter={headerCounter} />
+        <Crumbs crumbsText={crumbsText} />
 
 
-    </BrowserRouter >
+
+        <Routes>
+          <Route exact path="/" element={<CatalogPage setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
+          <Route exact path="/catalog/:barcode" element={<ProductPage setCrumbsText={setCrumbsText} />} />
+          <Route path="/basket" element={<BacketPage setBill={setBill} setHeaderCounter={setHeaderCounter} bill={bill} setBillCallBack={setBillCallBack} deleteFromBasket={deleteFromBasket} setHeaderCounterCallBack={setHeaderCounterCallBack} bascketItems={bascketItems} />} />
+          <Route path="/admin" element={<AdminPanel />} />
+        </Routes>
+        <Footer />
+
+
+      </BrowserRouter >
+    </div>
 
 
 
