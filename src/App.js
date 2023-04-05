@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import CatalogPage from "./Pages/CatalogPage";
@@ -57,25 +57,23 @@ function App() {
 
   return (
 
-    <div className="App">
-      <BrowserRouter>
+    <BrowserRouter>
 
-        <Header bill={bill} headerCounter={headerCounter} />
-        <Crumbs crumbsText={crumbsText} />
-
+      <Header bill={bill} headerCounter={headerCounter} />
+      <Crumbs crumbsText={crumbsText} />
 
 
-        <Routes>
-          <Route exact path="/" element={<CatalogPage setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
-          <Route exact path="/catalog/:barcode" element={<ProductPage setCrumbsText={setCrumbsText} />} />
-          <Route path="/basket" element={<BacketPage setBill={setBill} setHeaderCounter={setHeaderCounter} bill={bill} setBillCallBack={setBillCallBack} deleteFromBasket={deleteFromBasket} setHeaderCounterCallBack={setHeaderCounterCallBack} bascketItems={bascketItems} />} />
-          <Route path="/admin" element={<AdminPanel />} />
-        </Routes>
-        <Footer />
+
+      <Routes>
+        <Route exact path="/catalog" element={<CatalogPage setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
+        <Route exact path="/catalog/:barcode" element={<ProductPage setCrumbsText={setCrumbsText} />} />
+        <Route path="/basket" element={<BacketPage setBill={setBill} setHeaderCounter={setHeaderCounter} bill={bill} setBillCallBack={setBillCallBack} deleteFromBasket={deleteFromBasket} setHeaderCounterCallBack={setHeaderCounterCallBack} bascketItems={bascketItems} />} />
+        <Route path="/admin" element={<AdminPanel />} />
+      </Routes>
+      <Footer />
 
 
-      </BrowserRouter >
-    </div>
+    </BrowserRouter >
 
 
 

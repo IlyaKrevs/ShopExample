@@ -28,7 +28,7 @@ function CatalogPage(props) {
     let [sortByTypeOfCare, setSortByTypeOfCare] = useState('');
     let [limit, setLimit] = useState(9);
     let [totalPages, setTotalPages] = useState(0);
-    let [currentPage, setCurrentPage] = useState(1);
+    let [currentPages, setCurrentPages] = useState(1);
 
 
 
@@ -56,10 +56,10 @@ function CatalogPage(props) {
     function createArrayOnOnePage(arr) {
         let i = 0;
         let exampleArr = [];
-        while (i < ((currentPage - 1) * limit)) {
+        while (i < ((currentPages - 1) * limit)) {
             i++;
         }
-        while (i < (currentPage * limit)) {
+        while (i < (currentPages * limit)) {
             if (arr[i]) {
                 exampleArr.push(arr[i]);
             }
@@ -161,7 +161,7 @@ function CatalogPage(props) {
                             }
                         </div>
 
-                        <PageCountContainer currentPage={currentPage} setCurrentPage={setCurrentPage} createCounts={createCounts(totalPages)} />
+                        <PageCountContainer currentPages={currentPages} setCurrentPages={setCurrentPages} createCounts={createCounts(totalPages)} />
                     </div>
 
 
