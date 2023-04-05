@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import MyButton from '../../UI/MyButton/MyButton';
 import classes from './CatalogItem.module.css';
-import homePage from '../../../homePageLink'
+import homePage from '../../../homePageLink.js'
 
 
 const CatalogItem = (props) => {
