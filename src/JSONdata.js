@@ -1,5 +1,5 @@
 let myItem1 = {
-    url: "https://ilyakrevs.github.io/ShopExample/img/products/photo1.jpg",
+    url: "./img/products/photo1.jpg",
     name: "1a",
     sizeType: {
         weight: "1",
