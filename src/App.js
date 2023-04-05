@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import CatalogPage from "./Pages/CatalogPage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Crumbs from "./Components/Crumbs/Crumbs";
 import Footer from "./Components/Footer/Footer";
@@ -57,7 +57,7 @@ function App() {
 
   return (
 
-    <BrowserRouter>
+    <HashRouter>
 
       <Header bill={bill} headerCounter={headerCounter} />
       <Crumbs crumbsText={crumbsText} />
@@ -73,7 +73,7 @@ function App() {
       <Footer />
 
 
-    </BrowserRouter >
+    </HashRouter >
 
 
 
