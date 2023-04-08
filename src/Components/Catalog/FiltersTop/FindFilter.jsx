@@ -9,7 +9,7 @@ import deletePic from '../../../img/delete.svg';
 
 const FindFilter = (props) => {
 
-    let myData = JSON.parse(myDataJSON);
+    let myData = JSON.parse(props.myShopData);
 
     function getValueFromData(data) {
 

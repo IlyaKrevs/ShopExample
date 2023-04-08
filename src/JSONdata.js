@@ -307,23 +307,7 @@ let myItem17 = {
 
 let myDataArray = [myItem1, myItem2, myItem3, myItem4, myItem5, myItem6, myItem7, myItem8, myItem9, myItem10, myItem11, myItem12, myItem13, myItem14, myItem15, myItem16, myItem17];
 
-let localStorageArr = [];
-
-for (let i = 0; i < localStorage.length; i++) {
-    let key = localStorage.key(i)
-    localStorageArr.push(JSON.parse(localStorage.getItem(key)));
-}
-
-let myDataJSON;
-
-if (localStorageArr.length) {
-    myDataJSON = JSON.stringify(localStorageArr);
-} else {
-    myDataJSON = JSON.stringify(myDataArray);
-}
-
-let homePage = 'https://ilyakrevs.github.io/ShopExample/';
-
+let myDataJSON = JSON.stringify(myDataArray);
 
 
 export default myDataJSON;

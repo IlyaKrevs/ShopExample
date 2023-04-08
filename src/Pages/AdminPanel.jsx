@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import classes from './AdminPanel.module.css'
+import NewItemsComponent from '../Components/NewItems';
 
 const AdminPanel = () => {
 
     let [urlForm, setUrlForm] = useState('');
-    let [nameForm, Form] = useState('');
+    let [nameForm, setNameForm] = useState('');
     let [weigthForm, setWeigthForm] = useState('');
     let [volumeForm, setVolumeForm] = useState('');
     let [sizeForm, setSizeForm] = useState('');
@@ -46,13 +47,47 @@ const AdminPanel = () => {
         let itemJSON = JSON.stringify(createObj);
 
         localStorage.setItem(barcodeForm, itemJSON);
-        console.log(localStorage.getItem(barcodeForm))
     }
 
 
     function clearStorage(e) {
         e.preventDefault();
         localStorage.clear();
+    }
+
+
+    let [newItems, setNewItems] = useState([]);
+
+
+    useEffect(() => {
+        if (localStorage.length) {
+            let valueFromLocalStorage = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                let key = localStorage.key(i);
+                valueFromLocalStorage.push(JSON.parse(localStorage.getItem(key)))
+            }
+            setNewItems(valueFromLocalStorage);
+        } else {
+            setNewItems([]);
+        }
+
+    }, [localStorage])
+
+
+    function editNewItems(e) {
+        e.preventDefault();
+        setUrlForm(e.target.item.url)
+        setNameForm(e.target.item.name)
+        setWeigthForm(e.target.item.sizeType.weight)
+        setVolumeForm(e.target.item.sizeType.volume)
+        setSizeForm(e.target.item.size)
+        setBarcodeForm(e.target.item.barcode)
+        setMakerForm(e.target.item.maker)
+        setBrandForm(e.target.item.brand)
+        setDescriptionForm(e.target.item.description)
+        setPriceForm(e.target.item.price)
+        setTypeOfCareForm(e.target.item.typeOfCare)
+        newItems.filter(params => params.barcode !== e.target.item.barcode)
     }
 
     return (
@@ -62,7 +97,7 @@ const AdminPanel = () => {
                 <input className={classes.adminInput} type="text" placeholder="url"
                     value={urlForm} onChange={e => setUrlForm(e.target.value)} />
                 <input className={classes.adminInput} type="text" placeholder="name"
-                    value={nameForm} onChange={e => Form(e.target.value)} />
+                    value={nameForm} onChange={e => setNameForm(e.target.value)} />
                 <input className={classes.adminInput} type="text" placeholder="weigth"
                     value={weigthForm} onChange={e => setWeigthForm(e.target.value)} />
                 <input className={classes.adminInput} type="text" placeholder="volume"
@@ -108,6 +143,12 @@ const AdminPanel = () => {
                     <button onClick={e => clearStorage(e)} className={classes.adminBtn}>Очистить</button>
                 </div>
             </form>
+
+
+            <div className={classes.newItemsContainer}>
+                {newItems.map(item =>
+                    <NewItemsComponent onClick={e => editNewItems(e)} item={item} children={item.barcode} />)}
+            </div>
         </div >
     );
 };

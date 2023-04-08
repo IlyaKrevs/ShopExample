@@ -11,7 +11,7 @@ import blackPic from './../img/imgBlack.svg';
 
 const ProductPage = (props) => {
     let params = useParams();
-    let myData = JSON.parse(myDataJSON);
+    let myData = JSON.parse(props.myShopData);
 
     let [productCount, setProductCount] = useState(1)
 

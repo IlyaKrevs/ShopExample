@@ -1,9 +1,11 @@
 .adminPanel {
     padding-top: 80px;
+    padding-left: calc(50% - 685px);
+    padding-right: calc(50% - 685px);
     display: flex;
     height: 900px;
-    margin-bottom: 100px;
-    margin-left: 100px;
+    margin-bottom: 80px;
+    gap: 200px;
 }
 
 .addItemsForJSON {
@@ -47,4 +49,17 @@
     display: flex;
     gap: 5px;
     align-items: center;
+}
+
+.newItemsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.newItem {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
 }

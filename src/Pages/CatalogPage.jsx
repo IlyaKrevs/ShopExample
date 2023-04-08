@@ -14,7 +14,7 @@ import PageCountContainer from "../Components/UI/PageCounter/PageCountContainer"
 
 function CatalogPage(props) {
 
-    let myData = JSON.parse(myDataJSON);
+    let myData = JSON.parse(props.myShopData);
 
     let [checkBoxesValue, setCheckBoxesValue] = useState('');
 
@@ -145,13 +145,13 @@ function CatalogPage(props) {
                 <div className={classes.mainCatalog}>
                     <CatalogTop setSortByValue={setSortByValue} />
 
-                    <FiltersContainer setSortByTypeOfCare={setSortByTypeOfCare} />
+                    <FiltersContainer myShopData={props.myShopData} setSortByTypeOfCare={setSortByTypeOfCare} />
 
                     <div className={classes.catalogBot}>
                         <div className={classes.catalogBot__filtersContainer}>
                             <BotPriceFilter priceFilterMin={priceFilterMin} priceFilterMax={priceFilterMax} setPriceFilterMin={setPriceFilterMin} setPriceFilterMax={setPriceFilterMax} />
-                            <FindFilter showItemsDelete={showItemsDelete} showItemsCallBack={showItemsCallBack} checkBoxesCallBackFnc={checkBoxesCallBackFnc} />
-                            <SelectFilter setSortByTypeOfCare={setSortByTypeOfCare} />
+                            <FindFilter myShopData={props.myShopData} showItemsDelete={showItemsDelete} showItemsCallBack={showItemsCallBack} checkBoxesCallBackFnc={checkBoxesCallBackFnc} />
+                            <SelectFilter myShopData={props.myShopData} setSortByTypeOfCare={setSortByTypeOfCare} />
                         </div>
 
                         <div className={classes.catalogBot__itemsList}>

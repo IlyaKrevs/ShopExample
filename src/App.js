@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import ProductPage from "./Pages/ProductPage";
 import BacketPage from "./Pages/BacketPage";
 import AdminPanel from "./Pages/AdminPanel";
+import myDataJSON from "./JSONdata";
 
 
 
@@ -17,9 +18,25 @@ function App() {
   let [crumbsText, setCrumbsText] = useState('')
   let [bascketItems, setBascketItems] = useState([]);
   let [headerCounter, setHeaderCounter] = useState(0);
-
   let [bill, setBill] = useState(0);
 
+  let [myShopData, setMySHopData] = useState('');
+
+
+  useEffect(() => {
+    if (localStorage.length) {
+      let valueFromLocalStorage = [];
+      for (let i = 0; i < localStorage.length; i++) {
+        let key = localStorage.key(i);
+        valueFromLocalStorage.push(JSON.parse(localStorage.getItem(key)))
+      }
+      setMySHopData(JSON.stringify(valueFromLocalStorage));
+    } else {
+      setMySHopData(myDataJSON);
+    }
+  }, [localStorage]);
+
+  
 
 
   useEffect(() => {
@@ -65,8 +82,8 @@ function App() {
 
 
       <Routes>
-        <Route exact path="/catalog" element={<CatalogPage setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
-        <Route exact path="/catalog/:barcode" element={<ProductPage setCrumbsText={setCrumbsText} />} />
+        <Route exact path="/catalog" element={<CatalogPage myShopData={myShopData} setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
+        <Route exact path="/catalog/:barcode" element={<ProductPage myShopData={myShopData} setCrumbsText={setCrumbsText} />} />
         <Route path="/basket" element={<BacketPage setBill={setBill} setHeaderCounter={setHeaderCounter} bill={bill} setBillCallBack={setBillCallBack} deleteFromBasket={deleteFromBasket} setHeaderCounterCallBack={setHeaderCounterCallBack} bascketItems={bascketItems} />} />
         <Route path="/admin" element={<AdminPanel />} />
       </Routes>

@@ -6,7 +6,7 @@ import classes from './FiltersContainer.module.css';
 const FiltersContainer = (props) => {
 
 
-    let myData = JSON.parse(myDataJSON);
+    let myData = JSON.parse(props.myShopData);
     let filterArray = [];
 
     myData.forEach(element => {

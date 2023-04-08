@@ -6,7 +6,7 @@ import classes from './SelectFilter.module.css';
 const SelectFilter = (props) => {
 
     let selectFiltersArr = [];
-    let myData = JSON.parse(myDataJSON);
+    let myData = JSON.parse(props.myShopData);
 
     myData.forEach(element => {
         if (!selectFiltersArr.includes(...element.typeOfCare)) {

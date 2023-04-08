@@ -1,0 +1,9 @@
+.newItem {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 50px;
+    align-items: center;
+    padding: 25px;
+}
