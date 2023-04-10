@@ -24,19 +24,22 @@ function App() {
 
 
   useEffect(() => {
-    if (localStorage.length) {
-      let valueFromLocalStorage = [];
-      for (let i = 0; i < localStorage.length; i++) {
-        let key = localStorage.key(i);
-        valueFromLocalStorage.push(JSON.parse(localStorage.getItem(key)))
+    function firstLoadFnc() {
+      if (localStorage.length > 0) {
+        let valueFromLocalStorage = [];
+        for (let i = 0; i < localStorage.length; i++) {
+          let key = localStorage.key(i);
+          valueFromLocalStorage.push(JSON.parse(localStorage.getItem(key)))
+        }
+        setMySHopData(JSON.stringify(valueFromLocalStorage));
+      } else {
+        setMySHopData(myDataJSON);
       }
-      setMySHopData(JSON.stringify(valueFromLocalStorage));
-    } else {
-      setMySHopData(myDataJSON);
     }
+    firstLoadFnc()
   }, [localStorage]);
 
-  
+
 
 
 
@@ -86,8 +89,6 @@ function App() {
         <Route path="/admin" element={<AdminPanel myShopData={myShopData} />} />
       </Routes>
       <Footer />
-
-
     </BrowserRouter >
 
 

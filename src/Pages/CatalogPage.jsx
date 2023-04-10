@@ -14,7 +14,6 @@ import PageCountContainer from "../Components/UI/PageCounter/PageCountContainer"
 
 function CatalogPage(props) {
 
-    let myData = JSON.parse(props.myShopData);
 
     let [checkBoxesValue, setCheckBoxesValue] = useState('');
 
@@ -29,6 +28,8 @@ function CatalogPage(props) {
     let [limit, setLimit] = useState(9);
     let [totalPages, setTotalPages] = useState(0);
     let [currentPages, setCurrentPages] = useState(1);
+
+    let myData = JSON.parse(props.myShopData);
 
 
 
@@ -47,6 +48,7 @@ function CatalogPage(props) {
         }
         return arr;
     }
+
 
 
     function calcCountPages(arr) {
@@ -125,7 +127,7 @@ function CatalogPage(props) {
         }
     }
 
-
+    // все можно переделать через useEffect, теперь уже знаю
     myArr = createArrayOnOnePage(createArrSortByTypeOfCare(createSortArr(createShowItemsArr())));
 
     function showItemsDelete() {
@@ -156,7 +158,7 @@ function CatalogPage(props) {
 
                         <div className={classes.catalogBot__itemsList}>
                             {myArr.map(item =>
-                                <CatalogItem setBillCallBack={props.setBillCallBack} setHeaderCounterCallBack={props.setHeaderCounterCallBack} key={item.barcode} catalogItem={item} />
+                                <CatalogItem data-testid='itemForTest' setBillCallBack={props.setBillCallBack} setHeaderCounterCallBack={props.setHeaderCounterCallBack} key={item.barcode} catalogItem={item} />
                             )
                             }
                         </div>

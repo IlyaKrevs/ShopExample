@@ -43,7 +43,7 @@ const CatalogItem = (props) => {
             </div>
 
 
-            <div className={classes.item__price}>
+            <div data-testid="addBasketForTest" className={classes.item__price}>
                 <p className={classes.price__value}>{props.catalogItem.price} ₸</p>
                 <MyButton style={{
                     padding: '15px',
@@ -53,7 +53,7 @@ const CatalogItem = (props) => {
                     fontSize: '10px',
                     lineHeight: '12px',
                     letterSpacing: '0.15em',
-                }} children='В КОРЗИНУ' src={btnPic} onClick={(e) => btnDeactivate()} disabled={btnState === 1 && true} />
+                }} children='В КОРЗИНУ' data-testid="incrementButton"  src={btnPic} onClick={(e) => btnDeactivate()} disabled={btnState === 1 && true} />
             </div>
         </div>
     );

@@ -9,7 +9,7 @@ const PageCountContainer = (props) => {
     return (
         <div {...props} className={classes.countContainer}>
             {props.createCounts.map(item =>
-                <CountItem onClick={(e) => props.setCurrentPages(item)} children={item} key={item} currentPages={props.currentPages} />
+                <CountItem onClick={(e) => props.setCurrentPages(item)} children={item} key={item} myCurrentPages={props.currentPages} />
             )
             }
         </div>

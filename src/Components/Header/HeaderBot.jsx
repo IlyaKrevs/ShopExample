@@ -18,9 +18,9 @@ const HeaderBot = (props) => {
         <div className={classes.header__bot}>
             <img src={sultanPic} alt="sultan" />
 
-            <Link to='/catalog'> <MyButton children='Каталог' src={btnPic1} />
+            <Link  to='/catalog' data-testid='linkForTest'> <MyButton data-testid='btnForTest' children='Каталог' src={btnPic1} />
             </Link>
-            <MyInput />
+            <MyInput data-testid='inputForTest' />
 
             <div className={classes.header__CallBackContainer}>
                 <div className={classes.CallBackText}>
@@ -34,7 +34,7 @@ const HeaderBot = (props) => {
             <div className={classes.splitter}></div>
 
 
-            <Link to="/admin">  <MyButton children="Админка" src={adminPic} /></Link>
+            <Link to="/admin" data-testid='adminLinkForTest'>  <MyButton children="Админка" src={adminPic} /></Link>
 
             <div className={classes.splitter}></div>
             <Link to="/basket">
@@ -42,7 +42,7 @@ const HeaderBot = (props) => {
 
                     <div className={classes.backet__image}>
                         <img src={basketPic} />
-                        <div className={classes.backetCounter}>
+                        <div data-testid='headerCounter' className={classes.backetCounter}>
                             {props.headerCounter}
                         </div>
                     </div>

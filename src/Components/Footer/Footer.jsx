@@ -98,7 +98,7 @@ const Footer = () => {
                     </p>
 
                     <div className={classes.little_img_container}>
-                        <img src={wAppPic} />
+                        <img data-testid='imageWapp' src={wAppPic} />
                         <img src={tgPic} />
                     </div>
                 </div>

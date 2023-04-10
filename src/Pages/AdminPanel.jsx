@@ -94,7 +94,7 @@ const AdminPanel = (props) => {
 
     return (
         <div className={classes.adminPanel}>
-            <p>Никак не пойму как отловить изменение localStorage, поэтому работает очень криво</p>
+            <p data-testid="shitMessage">Никак не пойму как отловить изменение localStorage, поэтому работает очень криво</p>
             <form className={classes.addItemsForJSON}>
                 <input className={classes.adminInput} type="text" placeholder="url"
                     value={urlForm} onChange={e => setUrlForm(e.target.value)} />
