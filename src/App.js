@@ -39,9 +39,7 @@ function App() {
   
 
 
-  useEffect(() => {
-    setBillCallBack()
-  }, [headerCounter, bascketItems])
+
 
 
   function setBillCallBack(check) {
@@ -85,7 +83,7 @@ function App() {
         <Route exact path="/catalog" element={<CatalogPage myShopData={myShopData} setBillCallBack={setBillCallBack} setHeaderCounterCallBack={setHeaderCounterCallBack} />} />
         <Route exact path="/catalog/:barcode" element={<ProductPage myShopData={myShopData} setCrumbsText={setCrumbsText} />} />
         <Route path="/basket" element={<BacketPage setBill={setBill} setHeaderCounter={setHeaderCounter} bill={bill} setBillCallBack={setBillCallBack} deleteFromBasket={deleteFromBasket} setHeaderCounterCallBack={setHeaderCounterCallBack} bascketItems={bascketItems} />} />
-        <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/admin" element={<AdminPanel myShopData={myShopData} />} />
       </Routes>
       <Footer />
 

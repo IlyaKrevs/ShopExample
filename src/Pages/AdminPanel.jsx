@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import classes from './AdminPanel.module.css'
 import NewItemsComponent from '../Components/NewItems';
 
-const AdminPanel = () => {
+const AdminPanel = (props) => {
 
     let [urlForm, setUrlForm] = useState('');
     let [nameForm, setNameForm] = useState('');
@@ -15,6 +15,23 @@ const AdminPanel = () => {
     let [descriptionForm, setDescriptionForm] = useState('');
     let [priceForm, setPriceForm] = useState('');
     let [typeOfCareForm, setTypeOfCareForm] = useState([]);
+
+
+    let [items, setItems] = useState([]);
+
+
+    useEffect(() => {
+        if (localStorage.length) {
+            let valueFromLocalStorage = [];
+            for (let i = 0; i < localStorage.length; i++) {
+                let key = localStorage.key(i);
+                valueFromLocalStorage.push(JSON.parse(localStorage.getItem(key)))
+            }
+            setItems(valueFromLocalStorage);
+        } else {
+            setItems([]);
+        }
+    }, [localStorage]);
 
 
     function checkBoxFNC(params) {
@@ -56,43 +73,28 @@ const AdminPanel = () => {
     }
 
 
-    let [newItems, setNewItems] = useState([]);
 
 
-    useEffect(() => {
-        if (localStorage.length) {
-            let valueFromLocalStorage = [];
-            for (let i = 0; i < localStorage.length; i++) {
-                let key = localStorage.key(i);
-                valueFromLocalStorage.push(JSON.parse(localStorage.getItem(key)))
-            }
-            setNewItems(valueFromLocalStorage);
-        } else {
-            setNewItems([]);
-        }
-
-    }, [localStorage])
 
 
-    function editNewItems(e) {
-        e.preventDefault();
-        setUrlForm(e.target.item.url)
-        setNameForm(e.target.item.name)
-        setWeigthForm(e.target.item.sizeType.weight)
-        setVolumeForm(e.target.item.sizeType.volume)
-        setSizeForm(e.target.item.size)
-        setBarcodeForm(e.target.item.barcode)
-        setMakerForm(e.target.item.maker)
-        setBrandForm(e.target.item.brand)
-        setDescriptionForm(e.target.item.description)
-        setPriceForm(e.target.item.price)
-        setTypeOfCareForm(e.target.item.typeOfCare)
-        newItems.filter(params => params.barcode !== e.target.item.barcode)
+    function editNewItemsCallBack(element) {
+        setUrlForm(element.url)
+        setNameForm(element.name)
+        setWeigthForm(element.sizeType.weight)
+        setVolumeForm(element.sizeType.volume)
+        setSizeForm(element.size)
+        setBarcodeForm(element.barcode)
+        setMakerForm(element.maker)
+        setBrandForm(element.brand)
+        setDescriptionForm(element.description)
+        setPriceForm(element.price)
+        setTypeOfCareForm(element.typeOfCare)
+        localStorage.removeItem(element.barcode);
     }
 
     return (
         <div className={classes.adminPanel}>
-
+            <p>Никак не пойму как отловить изменение localStorage, поэтому работает очень криво</p>
             <form className={classes.addItemsForJSON}>
                 <input className={classes.adminInput} type="text" placeholder="url"
                     value={urlForm} onChange={e => setUrlForm(e.target.value)} />
@@ -146,8 +148,8 @@ const AdminPanel = () => {
 
 
             <div className={classes.newItemsContainer}>
-                {newItems.map(item =>
-                    <NewItemsComponent onClick={e => editNewItems(e)} item={item} children={item.barcode} />)}
+                {items.map(item =>
+                    <NewItemsComponent editNewItemsCallBack={editNewItemsCallBack} item={item} children={item.barcode} />)}
             </div>
         </div >
     );
