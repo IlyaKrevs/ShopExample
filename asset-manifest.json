@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ShopExample/static/css/main.a214320c.css",
-    "main.js": "/ShopExample/static/js/main.c09709da.js",
+    "main.css": "/ShopExample/static/css/main.6c1f676d.css",
+    "main.js": "/ShopExample/static/js/main.ad194ada.js",
     "static/media/telka.svg": "/ShopExample/static/media/telka.4800861a89434df988a6bc6190a4c4c8.svg",
     "static/media/sultan.svg": "/ShopExample/static/media/sultan.f8cd454a92661644af7bdc46555de0a6.svg",
     "static/media/sultanWhite.svg": "/ShopExample/static/media/sultanWhite.01a6f52c21ce2c03e13edd33aeaa1c4a.svg",
@@ -21,11 +21,11 @@
     "index.html": "/ShopExample/index.html",
     "static/media/imgBlack.svg": "/ShopExample/static/media/imgBlack.46131d447508d37599c11a90155e810a.svg",
     "static/media/priceListBtn.svg": "/ShopExample/static/media/priceListBtn.5e96ff0389bda2c469106116f0a58afd.svg",
-    "main.a214320c.css.map": "/ShopExample/static/css/main.a214320c.css.map",
-    "main.c09709da.js.map": "/ShopExample/static/js/main.c09709da.js.map"
+    "main.6c1f676d.css.map": "/ShopExample/static/css/main.6c1f676d.css.map",
+    "main.ad194ada.js.map": "/ShopExample/static/js/main.ad194ada.js.map"
   },
   "entrypoints": [
-    "static/css/main.a214320c.css",
-    "static/js/main.c09709da.js"
+    "static/css/main.6c1f676d.css",
+    "static/js/main.ad194ada.js"
   ]
 }
